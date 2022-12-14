@@ -1,0 +1,14 @@
+---
+const today = new Date();
+import { AUTHOR } from '../config';
+---
+
+<footer>
+	&copy; {today.getFullYear()} {AUTHOR}. All rights reserved.
+</footer>
+<style>
+	footer {
+		padding: 25px;
+		text-align: center;
+	}
+</style>
