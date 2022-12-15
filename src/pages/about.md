@@ -3,7 +3,7 @@ layout: "../layouts/BlogPost.astro"
 title: "About Me"
 description: "About Me"
 updatedDate: "August 08 2022"
-heroImage: "/Timothy-Pulliam/placeholder-about.jpg"
+heroImage: "/Timothy-Pulliam/my_face.png"
 ---
 
 Hi, I'm Tim! 
