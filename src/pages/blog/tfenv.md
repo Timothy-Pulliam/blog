@@ -52,19 +52,13 @@ If no parameter is passed, the version to use is resolved automatically via TFEN
 
 If a parameter is passed, available options:
 
-| Syntax | Description |
-| ------ | ----------- |
+| <div style="width:150px">Syntax</div> | Description |
+| :------------- | :----------- |
 | x.y.z  | Semver 2.0.0 string specifying the exact version to install |
 | latest | is a syntax to install latest version |
 | latest:&lt;regex&gt; | is a syntax to install latest version matching regex (used by grep -e) |
 | latest-allowed | is a syntax to scan your Terraform files to detect which version is maximally allowed. |
 | min-required | is a syntax to scan your Terraform files to detect which version is minimally required. |
-
-* x.y.z Semver 2.0.0 string specifying the exact version to install
-* latest is a syntax to install latest version
-* latest:&lt;regex&gt; is a syntax to install latest version matching regex (used by grep -e)
-* latest-allowed is a syntax to scan your Terraform files to detect which version is maximally allowed.
-* min-required is a syntax to scan your Terraform files to detect which version is minimally required.
 
 ```bash
 $ tfenv install
