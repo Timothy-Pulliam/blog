@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Terraform Virtual Environments with tfenv"
 description: "creating a virtual environment with tfenv"
 pubDate: "Dec 13 2022"
-heroImage: "/terraform-hero.png"
+heroImage: "/Timothy-Pulliam/terraform-hero.png"
 ---
 
 When writing a Terraform config, you should [specify the version of Terraform](https://developer.hashicorp.com/terraform/language/settings#specifying-a-required-terraform-version) you are using. This ensures that anyone using your terraform config is using the same version of the CLI tool. This is set in the terraform block, usually in main.tf, like so

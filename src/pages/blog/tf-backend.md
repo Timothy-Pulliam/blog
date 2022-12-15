@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Scripting a Terraform Backend"
 description: "Create a Terraform Backend with Azure CLI"
 pubDate: "Dec 13 2022"
-heroImage: "/terraform-hero.png"
+heroImage: "/Timothy-Pulliam/terraform-hero.png"
 ---
 
 A best practice when working with Terraform is to store the [state file](https://developer.hashicorp.com/terraform/language/state) in a remote location. This is accomplished by creating a [Terraform Backend](https://developer.hashicorp.com/terraform/language/settings/backends/configuration). For Azure, an [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) can be used to store the state file in.

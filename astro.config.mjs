@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://Timothy-Pulliam.github.io',
-	base: '/',
+	base: '/Timothy-Pulliam',
 	integrations: [mdx(), sitemap()],
 });
