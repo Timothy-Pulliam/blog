@@ -1,3 +1,12 @@
+---
+layout: "../../layouts/BlogPost.astro"
+title: "Trigger Azure Function Apps With Slack Slash Commands: Part 2"
+description: "Azure Python SDK"
+pubDate: "Dec 14 2022"
+heroImage: "/Timothy-Pulliam/azure-hero.avif"
+previewText: "Slack is a popular instant messaging service. Developers using slack can create a bot that triggers an Azure Function App written in Python."
+---
+
 ## Authenticate Python apps
 
 In order to access Azure resrouces, we must authenticate our application.
