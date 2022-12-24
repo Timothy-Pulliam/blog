@@ -7,9 +7,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 ).slice(0, 3);
-
-const random_greetings = ["Hello!", "Salutations!", "Hi There!", "Welcome!", "Greetings!", "Hola!", "Bonjour!", "Guten tag!", "Salve!"]
-var random_greeting = random_greetings[Math.floor(Math.random()*random_greetings.length)];
 ---
 
 <!DOCTYPE html>
@@ -20,7 +17,7 @@ var random_greeting = random_greetings[Math.floor(Math.random()*random_greetings
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>{random_greeting}</h1>
+			<h1>Welcome!</h1>
 			<p>
 				Welcome to my personal website where I discuss Azure, Terraform, Python, Linux, Kubernetes, and DevOps in general.
 			</p>
