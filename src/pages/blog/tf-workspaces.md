@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Terraform Workspaces"
 description: "Tutorial for Terraform Workspaces"
 pubDate: "Dec 13 2022"
-heroImage: "/Timothy-Pulliam/terraform-hero.png"
+heroImage: "/terraform-hero.png"
 previewText: "If you are working with Infrastructure as Code, you probably don't want to deploy new changes directly to your production environment. It's better to deploy into a dev environment that won't affect your end users' experience. Enter Terraform Workspaces."
 ---
 
@@ -48,7 +48,7 @@ dev	prod
 
 If using Azure Blob Storage for Terraform Backend, you can see the different state files.
 
-![terraform state files in Azure Blob Storage](/Timothy-Pulliam/tfstate_files.png "Terraform state files in Azure Blob Storage")
+![terraform state files in Azure Blob Storage](/tfstate_files.png "Terraform state files in Azure Blob Storage")
 
 ```bash
 $ terraform workspace list

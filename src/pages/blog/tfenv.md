@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Terraform Virtual Environments with tfenv"
 description: "creating a virtual environment with tfenv"
 pubDate: "Dec 13 2022"
-heroImage: "/Timothy-Pulliam/terraform-hero.png"
+heroImage: "/terraform-hero.png"
 previewText: "If you are writing many terraform configs, or your team is large, it’s really important to make sure everyone is using the same Terraform version. This is where Terraform virtual environments come in."
 ---
 
