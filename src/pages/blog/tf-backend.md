@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Scripting a Terraform Backend"
 description: "Create a Terraform Backend with Azure CLI"
 pubDate: "Dec 13 2022"
-heroImage: "/Timothy-Pulliam/terraform-hero.png"
+heroImage: "/terraform-hero.png"
 previewText: "A best practice when working with Terraform is to store the state file in a remote location. This is accomplished by creating a Terraform backend. For Azure, an Azure Blob Storage can be used to store the state file in."
 ---
 
@@ -86,4 +86,4 @@ terraform {
 }
 ```
 
-And that's all there is to it. After you set up your Terraform Backend, you might want to create a Terrafom Workspace for each of your environments (dev, qa, uat, prod). I cover that in [this blog post](/Timothy-Pulliam/blog/tf-workspaces). Thanks for reading.
+And that's all there is to it. After you set up your Terraform Backend, you might want to create a Terrafom Workspace for each of your environments (dev, qa, uat, prod). I cover that in [this blog post](/blog/tf-workspaces). Thanks for reading.
