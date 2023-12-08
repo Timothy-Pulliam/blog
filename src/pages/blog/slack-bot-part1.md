@@ -9,7 +9,7 @@ previewText: "Slack is a popular instant messaging service. Developers using sla
 
 ## Overview
 
-Slack is a popular instant messaging service. Developers can use [Slack Apps](https://devopsprofessionalsco.slack.com/apps) to create integrations with the platform. 
+Slack is a popular instant messaging service. Developers can use [Slack Apps](https://devopsprofessionalsco.slack.com/apps) to create integrations with the platform.
 
 In this article, I show how to create a basic Slack bot. The Slack bot accepts [Slash Commands](https://api.slack.com/interactivity/slash-commands) to make HTTP requests to an Azure Function App endpoint. The Function App will then run Azure comands using [Azure Python SDK](https://learn.microsoft.com/en-us/azure/developer/python/sdk/azure-sdk-overview).
 
@@ -25,6 +25,7 @@ This opens new opportunities for automation of Azure resources. For example:
 ## Setting Up a Local Dev Environment
 
 First thing to do is to set up our local environment. We will need Azure CLI, a Python virtual environment, and [azure-functions-core-tools](https://www.npmjs.com/package/azure-functions-core-tools), which will require npm.
+
 ```bash
 $ mkdir -p ~/code/slack-bot
 $ cd ~/code/slack-bot
@@ -86,7 +87,7 @@ We can test the function locally using `func start`
 
 Note: If you are using a MacBook with an M1 ARM processor, `func start` will produce an error. For a workaround, see this [Medium article](https://medium.com/@andreas.katzian/running-python-azure-function-locally-on-an-m1-18dae7128ac8).
 
-You should have a similar project structure. The `__init__.py` file contains the actual function code. 
+You should have a similar project structure. The `__init__.py` file contains the actual function code.
 
 ![project structure](/slack-bot/project-structure.png)
 
@@ -95,15 +96,16 @@ You should have a similar project structure. The `__init__.py` file contains the
 When creating a function app, you must create or link to a general-purpose Azure Storage account that supports Blobs, Queue, and Table storage.
 
 You must also create a function app consumption plan. The follow plan skus can be used:
-* B1(Basic Small) 
-* B2(Basic Medium)
-* B3(Basic Large)
-* S1(Standard Small)
-* P1V2(Premium V2 Small)
-* I1(Isolated Small)
-* I2 (Isolated Medium)
-* I3 (Isolated Large)
-* K1 (Kubernetes).
+
+- B1(Basic Small)
+- B2(Basic Medium)
+- B3(Basic Large)
+- S1(Standard Small)
+- P1V2(Premium V2 Small)
+- I1(Isolated Small)
+- I2 (Isolated Medium)
+- I3 (Isolated Large)
+- K1 (Kubernetes).
 
 ```bash
 #!/bin/bash
@@ -118,7 +120,7 @@ az group create \
     --location $LOCATION \
     --resource-group $RESOURCE_GROUP_NAME
 
-# create storage account 
+# create storage account
 # name must be globally unique
 az storage account create \
     --name $STORAGE_ACCOUNT_NAME \
@@ -133,7 +135,7 @@ az functionapp plan create \
     --resource-group $RESOURCE_GROUP_NAME \
     --location $LOCATION \
     --is-linux true \
-    --sku B1 
+    --sku B1
 
 # create function app
 # name must be globally unique
@@ -151,7 +153,7 @@ az functionapp create \
 `func azure functionapp publish` takes our local code and creates a tarball, which then is uploaded to the function app in Azure.
 
 ```bash
-(venv) tpulliam@Timothys-MBP slack-bot % func azure functionapp publish slack-bot-demo                
+(venv) tpulliam@Timothys-MBP slack-bot % func azure functionapp publish slack-bot-demo
 Getting site publishing info...
 Updating Application Settings for Remote build...
 Creating archive for current directory...
@@ -168,7 +170,7 @@ You can get the HTTP URL for the function by clicking on the function and then c
 
 ![get function url](/slack-bot/get-url.png)
 
-Any time you make changes to the `__init__.py` file, you can redeploy by issuing the `func azure functionapp publish slack-bot-demo` command.
+Any time you make changes to the `__init__.py` file, you can redeploy by issuing the `func azure functionapp publish funcapp-slack` command.
 
 ## Create the Slack App
 
@@ -204,7 +206,6 @@ Set bot to Always Show as Online
 
 You should now be able to see the bot in your Slack workspace
 
-
 ![install app](/slack-bot/helper.png)
 
 ## Create Slash Command
@@ -225,5 +226,4 @@ In any channel of your Slack workspace, type `/hello`. You should see a response
 
 ## Part 2
 
-You now have a working slack bot that triggers a function app using slash commands. In part 2, we will edit the function to do something meaningful using Azure Python SDK. 
-
+You now have a working slack bot that triggers a function app using slash commands. In part 2, we will edit the function to do something meaningful using Azure Python SDK.

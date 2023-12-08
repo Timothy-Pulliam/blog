@@ -1,3 +1,11 @@
+# Publish to Azure
+
+```
+cd ~/code/blog
+npm run build
+az storage blob upload-batch -d '$web' -s "./dist/" --account-name "blogsa0" --overwrite
+```
+
 # Astro Starter Kit: Blog
 
 ```
@@ -8,7 +16,6 @@ npm create astro@latest -- --template blog
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/blog)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
 
 ![blog](https://user-images.githubusercontent.com/4677417/186189140-4ef17aac-c3c9-4918-a8c2-ce86ba1bb394.png)
 
