@@ -86,4 +86,4 @@ terraform {
 }
 ```
 
-And that's all there is to it. After you set up your Terraform Backend, you might want to create a Terrafom Workspace for each of your environments (dev, qa, uat, prod). I cover that in [this blog post](/Timothy-Pulliam/blog/tf-workspaces). Thanks for reading.
+And that's all there is to it. After you set up your Terraform Backend, you might want to create a Terrafom Workspace for each of your environments (dev, qa, uat, prod). I cover that in [this blog post](/blog/tf-workspaces). Thanks for reading.
