@@ -44,7 +44,7 @@ You will then need to run `az login` to authenticate to Azure.
 
 Your dynamic inventory filename must end with `azure_rm.yml`. Here is a simple dynamic inventory that groups VMs by Linux distribution.
 
-###### inventory.azure_rm.yml
+###### inventory_azure_rm.yml
 
 ```yaml
 plugin: azure.azcollection.azure_rm
@@ -60,7 +60,7 @@ exclude_host_filters:
   - powerstate != 'running'
 # change how inventory_hostname is generated. Each item is a jinja2 expression similar to hostvar_expressions.
 hostnames:
-  - tags.vm_name
+  - name
 ```
 
 ```bash
