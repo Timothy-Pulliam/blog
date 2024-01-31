@@ -2,8 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Trigger Azure Function Apps With Slack Slash Commands: Part 1"
 description: "Azure Python SDK"
-pubDate: "Dec 14 2022"
-heroImage: "/azure-hero.avif"
+pubDate: "Oct 15 2023"
 heroImage: "/azure-hero.avif"
 previewText: "Slack is a popular instant messaging service. Developers using slack can create a bot that triggers an Azure Function App written in Python."
 ---
