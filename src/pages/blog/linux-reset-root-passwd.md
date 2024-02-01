@@ -15,7 +15,7 @@ Recovering a root password is an essential skill for a budding Linux Administrat
 
 First, you will need access to the bootloader (e.g. GRUB). This means you will either need physical acces to the system, access to Out-of-Band, iDRAC, IPMI, or Serial interface, or you will need access to the VM console.
 
-Here I am using [GNOME Boxes](https://docs.fedoraproject.org/en-US/quick-docs/installing-virtual-systems-with-gnome-boxes/), which is a Hypervisor that comes pre-installed on Fedora 39.
+Here I am using [GNOME Boxes](https://docs.fedoraproject.org/en-US/quick-docs/installing-virtual-systems-with-gnome-boxes/), which is an application that comes pre-installed on Fedora 39.
 
 Boot into GRUB. Press 'e' to edit the kernel parameters.
 
