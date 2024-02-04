@@ -1,6 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../config';
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <header>
@@ -14,6 +15,7 @@ import { SITE_TITLE } from '../config';
         <HeaderLink href="/ctf/">Capture the Flag</HeaderLink>
 		<HeaderLink href="https://medium.com/@timothy.dpulliam" target="_blank">Medium</HeaderLink>
 		<HeaderLink href="/about/">whoami</HeaderLink>
+        <ThemeIcon />
 	</nav>
 </header>
 <style>
