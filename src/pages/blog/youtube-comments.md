@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Pulling YouTube Comments With Python"
 description: "YouTube Python API"
-pubDate: "Feb 28 2023"
+pubDate: "Oct 24 2021"
 heroImage: "/python-hero.jpg"
 previewText: "YouTube comments are a treasure trove of information. Wouldn't it be nice if you could pull YouTube comments and analyze them? With the YouTube Python API, you can."
 ---
