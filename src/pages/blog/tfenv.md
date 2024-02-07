@@ -47,6 +47,7 @@ $ tfenv uninstall 1.1.5
 
 Of course you can install a version which matches certain criteria. From the README
 
+```plaintext
 Install a specific version of Terraform.
 
 If no parameter is passed, the version to use is resolved automatically via TFENV_TERRAFORM_VERSION environment variable or .terraform-version files, in that order of precedence, i.e. TFENV_TERRAFORM_VERSION, then .terraform-version. The default is 'latest' if none are found.
@@ -60,6 +61,7 @@ If a parameter is passed, available options:
 | latest:&lt;regex&gt; | is a syntax to install latest version matching regex (used by grep -e) |
 | latest-allowed | is a syntax to scan your Terraform files to detect which version is maximally allowed. |
 | min-required | is a syntax to scan your Terraform files to detect which version is minimally required. |
+```
 
 ```bash
 $ tfenv install
@@ -70,4 +72,5 @@ $ tfenv install min-required
 ```
 
 ### Conclusion
+
 It’s just that easy. You should use tfenv whenever you start a Terraform project of any size. Let me know if you have used tfenv before and if you like it. And remember, automate everything!
