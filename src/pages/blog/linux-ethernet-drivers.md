@@ -4,7 +4,7 @@ title: "Troubleshooting Linux Ethernet Drivers"
 description: "Troubleshooting Linux Ethernet Drivers"
 pubDate: "Feb 6 2024"
 heroImage: "/linux-hero.jpg"
-previewText: "Troubleshooting an Intel 10GbE integrated Ethernet driver with Linux."
+previewText: "Troubleshooting an Intel 10GbE integrated Ethernet Linux driver."
 ---
 
 Last week I needed to clone a server running on some old Dell hardware. I decided to use [Clonezilla](https://clonezilla.org/). But when I booted it up, I was dismayed to find the live debian environment could not get a DHCP lease.
