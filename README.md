@@ -3,7 +3,10 @@
 ```
 cd ~/code/blog
 npm run build
+# run either
 az storage blob upload-batch -d '$web' -s "./dist/" --account-name "blogsa0" --overwrite
+# or
+az storage blob sync -c '$web' -s ./dist --account-name blogsa0 --delete-destination true
 ```
 
 # Astro Starter Kit: Blog
