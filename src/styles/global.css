@@ -80,7 +80,7 @@ html.dark :is(body, h1, h2, h3, h4, h5, h6, strong, b, blockquote) {
     color: #fff;
 }
 
-html.dark p > code {
+html.dark * > code {
     background-color:  #0d1117; 
     color: #fff;
 }
